@@ -1,0 +1,64 @@
+* {
+  font-family: 'Optimus Princeps', Serif;
+}
+
+body {
+  background-image: url('./images/neu.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.item {
+  color: rgb(214, 131, 129);
+  flex: 0 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: larger;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}
+
+h1 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 0.75;
+  margin: 10px 0;
+}
+
+Header {
+  color: aliceblue;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+Footer {
+  color: rgb(214, 131, 129);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  text-shadow: 2px 2px 5px red;
+}
+
+.copy {
+  margin-bottom: 0px;
+}

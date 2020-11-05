@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import weaponsAPI from '../services/dsApi';
+import music from '../soundtrack/dssound.mp3';
 import battleAxe from '../images/battle_axe.png';
 import blackBow from '../images/black_bow_of_pharis.png';
 import alba from '../images/arbalest.png';
@@ -54,9 +56,10 @@ const HomePage = () => {
   console.log(weapon);
   return (
     <section className="carousel">
+      <ReactAudioPlayer autoPlay loop src={music} volume={0.3} />
       {weapon.map((Post) => (
         <div className="item">
-          <img src={qualq[Post.name]} width="150px" height="270px"/><br></br><br></br>
+          <img src={qualq[Post.name]} width="150px" height="270px" alt="img"/><br></br><br></br>
           <div>{Post.name}</div>
           <div>Damage: {Post.base_damage.slice(1, 4)}</div>
           <div>Type: {Post.weapon_type}</div>
